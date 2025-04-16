@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI888</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- LINK ANIMATE.JS -->
+    <script defer src="/assets/js/animate.js"></script>
+    <!-- LINK ANIMATE.CSS-->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <a href="index.html" class="logo">multi 888.</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="active" onclick="navbarClick('home')">Home</a></li>
+                <li><a href="works.html" onclick="navbarClick('work')">Work</a></li>
+                <li><a href="about.html" onclick="navbarClick('about')">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- HOME SECTION -->
+    <section class="home">
+        <div class="content hidden-top">
+            <h1>MULTI888</h1>
+            <h3>Dream big, we'll make it happen.</h3>
+        </div>
+        <div class="image hidden-top">
+            <img src="/assets/img/home/home-section.png" alt="">
+        </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="info">
+        <div class="content hidden-top">
+            <span>WHAT </span>
+            <span class="blue-text">WE DO</span>
+            <p>MULTI888 team is a creative team that specializes in wide of many types including graphics, painting, video, animation, and photography. We can make your work to dream come true.</p>
+        </div>
+        <div class="image">
+            <img src="/assets/img/home/info-section.png" alt="">
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+        <div class="gallery-topic">
+            <h1>GALLERY</h1>
+        </div>
+        <div class="slider">
+            <div class="list">
+                <div class="item"><img src="/assets/img/home/2.png" alt=""></div>
+                <div class="item"><img src="/assets/img/home/1.png" alt=""></div>
+                <div class="item"><img src="/assets/img/home/3.png" alt=""></div>
+                <div class="item"><img src="/assets/img/home/4.jpg" alt=""></div>
+                <div class="item"><img src="/assets/img/home/5.jpg" alt=""></div>
+            </div>
+            <div class="buttons">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="video">
+        <div class="topic">
+            <h1>Video</h1>
+        </div>
+        <div class="container">
+            <video src="/assets/img/home/videos/1.mp4" class="slider" autoplay loop muted controls></video>
+            <ul>
+                <li onclick="videoSlider('/assets/img/home/videos/1.mp4')"><video src="/assets/img/home/videos/1.mp4"></video></li>
+                <li onclick="videoSlider('/assets/img/home/videos/3.mp4')"><video src="/assets/img/home/videos/3.mp4"></video></li>
+                <li onclick="videoSlider('/assets/img/home/videos/4.mp4')"><video src="/assets/img/home/videos/4.mp4"></video></li>
+                <li onclick="videoSlider('/assets/img/home/videos/5.mp4')"><video src="/assets/img/home/videos/5.mp4"></video></li>
+                <li onclick="videoSlider('/assets/img/home/videos/6.mp4')"><video src="/assets/img/home/videos/6.mp4"></video></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer class="contact hidden-top">
+        <div class="contact-topic">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="contact-container">
+            <div class="contact-con">
+                <p>ที่อยู่ไปรษณีย์อิเล็กทรอนิกส์ของบริษัท</p>
+                <a href="#email"><i class="uil uil-fast-mail"></i> MULTI888@GMAIL.COM</a>
+            </div>
+            <div class="contact-con">
+                <p>สอบถามหรือยืนยันข้อมูลเพิ่มเติม</p>
+                <p id="contact-container-info">โทรศัพท์ : 02-121-2312</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
